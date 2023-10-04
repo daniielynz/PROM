@@ -9,52 +9,73 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="20dp">
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:text="Camaras de Seguridad:"
+            android:textSize="20sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnSubir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:baselineAligned="false"
+                android:text="ON" />
+
+            <Button
+                android:id="@+id/btnBajar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:baselineAligned="false"
+                android:text="OFF" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:text="Intensidad de las luces"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="30"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="30dp"
+            android:progress="20" />
+
+        <Button
+            android:id="@+id/btnSubirTemperatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="+" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="Temperatura:"
+            android:layout_gravity="center_horizontal"
             android:textSize="20sp" />
-        <EditText
-            android:id="@+id/primerNum"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="Luces:"
-            android:textSize="20sp" />
-        <EditText
-            android:id="@+id/segundoNum"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text" />
         <Button
-            android:id="@+id/btnSubir"
+            android:id="@+id/btnBajarTemperatura"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="+"/>
-        <EditText
-            android:id="@+id/edtTemperatura"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"/>
-        <Button
-            android:id="@+id/btnBajar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-"/>
-        <TextView
-            android:id="@+id/lblResultado"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:text="Resultado:"
-            android:textSize="20sp" />
+            android:layout_gravity="center_horizontal"
+            android:text="-" />
 
     </LinearLayout>
 
