@@ -18,25 +18,25 @@ public class MainActivity2 extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
 
-        int nombre = Integer.parseInt(extras.getString("nombre")) ;
-        int apellidos = Integer.parseInt(extras.getString("apellidos")) ;
-      //  int sexo = Integer.parseInt(extras.getString("sexo")) ;
-     //   ArrayList<String> aficiones = extras.getStringArrayList("aficiones");
+        String nombre = extras.getString("nombre") ;
+        String apellidos = extras.getString("apellidos") ;
+        String sexo = extras.getString("sexo") ;
+        ArrayList<String> aficiones = extras.getStringArrayList("aficiones");
 
-     //   String resultado = "Nombre y apellidos : "+nombre+" "+apellidos+"/t Sexo:"+sexo+"/t Aficiones: ";
-        String resultado = "Nombre y apellidos : "+nombre+" "+apellidos+"/t Sexo: ";
-/*
+        String resultado = "Nombre: "+nombre+"\nApellidos: "+apellidos+"\nSexo: "+sexo+"\nAficiones: ";
+
         if (aficiones!=null){
             for (String str : aficiones){
                 resultado+=" "+str;
             }
-        } */
+        }
 
         TextView tvResultado = findViewById(R.id.tvResultado);
         tvResultado.setText(resultado);
     }
 
     public void accionVolver (View v){
-
+        Intent intent = new Intent(MainActivity2.this, MainActivity.class);
+        startActivity(intent);
     }
 }

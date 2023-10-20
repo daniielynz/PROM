@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         // Datos de los apellidos
         EditText apellidos = findViewById(R.id.etApellidos);
         intent.putExtra("apellidos" , apellidos.getText().toString());
-/*
+
         // Datos de los radiobutton
         // Sacamos el id del radiobutton seleccionado
         RadioGroup rg = (RadioGroup)findViewById(R.id.radioGroupSexo);
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
         intent.putExtra("aficiones" , arrlCheck);
 
-*/
+
         startActivity(intent);
     }
 }
