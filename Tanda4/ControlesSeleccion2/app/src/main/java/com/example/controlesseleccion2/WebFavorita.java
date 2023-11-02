@@ -1,11 +1,11 @@
 package com.example.controlesseleccion2;
 
-public class MainActivity2 {
+public class WebFavorita {
     private String nombre;
     private String url;
     private int imagenResource;
 
-    public MainActivity2(String nombre, String url, int imagenResource) {
+    public WebFavorita(String nombre, String url, int imagenResource) {
         this.nombre = nombre;
         this.url = url;
         this.imagenResource = imagenResource;
@@ -23,3 +23,4 @@ public class MainActivity2 {
         return imagenResource;
     }
 }
+

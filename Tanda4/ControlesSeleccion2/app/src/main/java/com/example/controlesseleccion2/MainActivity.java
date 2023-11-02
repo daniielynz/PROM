@@ -27,12 +27,12 @@ public class MainActivity extends AppCompatActivity {
 
         ListView listView = findViewById(R.id.listView);
 
-        List<MainActivity2> webFavoritas = new ArrayList<>();
-        webFavoritas.add(new MainActivity2("Forocoches", "https://www.forocoches.com", R.drawable.forocoches));
-        webFavoritas.add(new MainActivity2("Reddit", "https://www.reddit.com", R.drawable.reddit));
-        webFavoritas.add(new MainActivity2("Stack Overflow", "https://www.stackoverflow.com", R.drawable.stackoverflow));
+        List<WebFavorita> webFavoritas = new ArrayList<>();
+        webFavoritas.add(new WebFavorita("Futbin", "https://www.futbin.com", R.drawable.futbin));
+        webFavoritas.add(new WebFavorita("Marca", "https://www.marca.com", R.drawable.marca));
+        webFavoritas.add(new WebFavorita("Twitter", "https://www.twitter.com", R.drawable.twitter));
 
-        ArrayAdapter<MainActivity2> adapter = new ArrayAdapter<MainActivity2>(this, R.layout.list_item, webFavoritas) {
+        ArrayAdapter<WebFavorita> adapter = new ArrayAdapter<WebFavorita>(this, R.layout.list_item, webFavoritas) {
             @NonNull
             @Override
             public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                     convertView = getLayoutInflater().inflate(R.layout.list_item, parent, false);
                 }
 
-                MainActivity2 webFavorita = getItem(position);
+                WebFavorita webFavorita = getItem(position);
 
                 ImageView imageView = convertView.findViewById(R.id.imageView);
                 TextView textViewName = convertView.findViewById(R.id.textViewName);
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                MainActivity2 selectedWeb = webFavoritas.get(position);
+                WebFavorita selectedWeb = webFavoritas.get(position);
                 String url = selectedWeb.getUrl();
 
                 // Abrir la URL en un navegador web
@@ -69,3 +69,4 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+
