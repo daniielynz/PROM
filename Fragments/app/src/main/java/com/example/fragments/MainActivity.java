@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity implements FragmentListado.C
         fragmentListado.setCorreoListener(this);
     }
     @Override
-    public void onCorreoSeleccionado(Correo c) {
+    public void onCorreoSeleccionado(Serie c) {
         boolean hayDetalle = (getSupportFragmentManager().
                 findFragmentById(R.id.frgDetalle)!= null);
         if (hayDetalle) {
