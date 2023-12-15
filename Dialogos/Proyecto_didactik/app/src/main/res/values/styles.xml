@@ -1,0 +1,38 @@
+<!-- res/values/styles.xml -->
+<resources>
+
+    <!-- Estilo para el cuerpo de la aplicación sin ActionBar -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/masOscuro</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Estilo para el botón -->
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/bordes_redondos</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Estilo para el botón -->
+    <style name="AppTheme.TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:background">@drawable/bordes_listaletras</item>
+        <item name="android:textColor">@color/masOscuro</item>
+    </style>
+
+    <!-- Estilo para el cuadro de diálogo -->
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">@color/masClaro</item>
+        <item name="android:textColor">@color/masOscuro</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColorPrimary">@color/masOscuro</item>
+    </style>
+
+    <!-- Estilo para el radiobutton -->
+    <style name="AppTheme.RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:buttonTint">@color/masOscuro</item>
+        <item name="android:textColor">@color/masOscuro</item>
+    </style>
+
+</resources>

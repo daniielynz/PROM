@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/masClaro"
+    tools:context=".Actividad7">
+
+    <!-- Imagen en la esquina superior izquierda -->
+    <ImageView
+        android:id="@+id/imagenVolver"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/volver"
+        android:onClick="volver"/>
+
+    <RelativeLayout
+        android:id="@+id/RL1"
+        android:layout_below="@id/imagenVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="30dp">
+
+        <TextView
+            android:id="@+id/pregunta1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Zergatik da hain altua Bizkaiko Zubia?"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pregunta1"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/opcion1B"
+                style="@style/AppTheme.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Itsasontziak arazorik gabe azpitik pasatzeko" />
+
+            <RadioButton
+                android:id="@+id/opcion1A"
+                style="@style/AppTheme.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Harrigarriagoa izateko"/>
+
+            <RadioButton
+                android:id="@+id/opcion1C"
+                style="@style/AppTheme.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Burdina soberan zutelako" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RL2"
+        android:layout_below="@id/RL1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="30dp">
+
+        <TextView
+            android:id="@+id/pregunta2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Zenbateko altuera du?"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pregunta2"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/opcion2A"
+                style="@style/AppTheme.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="100 metro"/>
+
+            <RadioButton
+                android:id="@+id/opcion2B"
+                style="@style/AppTheme.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="10 metro"/>
+
+            <RadioButton
+                android:id="@+id/opcion2C"
+                style="@style/AppTheme.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="50 metro"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RL3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RL2"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="30dp">
+
+        <TextView
+            android:id="@+id/pregunta3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Zein bi herri lotzen ditu?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pregunta3"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/opcion3A"
+                style="@style/AppTheme.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Getxo eta Portugalete" />
+
+            <RadioButton
+                android:id="@+id/opcion3B"
+                style="@style/AppTheme.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Lutxana eta Bilbao" />
+
+            <RadioButton
+                android:id="@+id/opcion3C"
+                style="@style/AppTheme.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Leioa eta Getxo" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/botonCentro"
+        style="@style/AppTheme.Button"
+        android:layout_below="@id/RL2"
+        android:layout_width="258dp"
+        android:layout_height="63dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:text="Egiaztatu" />
+</RelativeLayout>
