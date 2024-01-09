@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese texto"/>
+
+    <Button
+        android:id="@+id/btnWriteInternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText"
+        android:layout_marginTop="8dp"
+        android:text="Escribir en Interno" />
+
+    <Button
+        android:id="@+id/btnReadInternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnWriteInternal"
+        android:layout_marginTop="8dp"
+        android:text="Leer Interno" />
+
+    <Button
+        android:id="@+id/btnDeleteInternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnReadInternal"
+        android:layout_marginTop="8dp"
+        android:text="Borrar Interno" />
+
+    <Button
+        android:id="@+id/btnWriteExternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDeleteInternal"
+        android:layout_marginTop="8dp"
+        android:text="Escribir en Externo" />
+
+    <Button
+        android:id="@+id/btnReadExternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnWriteExternal"
+        android:layout_marginTop="8dp"
+        android:text="Leer Externo" />
+
+    <Button
+        android:id="@+id/btnDeleteExternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnReadExternal"
+        android:layout_marginTop="8dp"
+        android:text="Borrar Externo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDeleteExternal"
+        android:layout_marginTop="16dp"
+        android:background="#DDDDDD"
+        android:padding="8dp"
+        android:text="Contenido aquí"/>
+
+</RelativeLayout>
