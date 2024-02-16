@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/masClaro"
+    tools:context=".Actividad7">
+
+    <!-- Imagen en la esquina superior izquierda -->
+    <ImageView
+        android:id="@+id/imagenVolver"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/volver"
+        android:onClick="volver"/>
+
+    <RelativeLayout
+        android:id="@+id/RL1"
+        android:layout_below="@id/imagenVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="30dp">
+
+        <TextView
+            android:id="@+id/pregunta1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/testPregunta1"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pregunta1"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/opcion1B"
+                style="@style/AppTheme.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/testP1O1" />
+
+            <RadioButton
+                android:id="@+id/opcion1A"
+                style="@style/AppTheme.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/testP1O2"/>
+
+            <RadioButton
+                android:id="@+id/opcion1C"
+                style="@style/AppTheme.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/testP1O3" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RL2"
+        android:layout_below="@id/RL1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="30dp">
+
+        <TextView
+            android:id="@+id/pregunta2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/testPregunta2"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pregunta2"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/opcion2A"
+                style="@style/AppTheme.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/testP2O1"/>
+
+            <RadioButton
+                android:id="@+id/opcion2B"
+                style="@style/AppTheme.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/testP2O2"/>
+
+            <RadioButton
+                android:id="@+id/opcion2C"
+                style="@style/AppTheme.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/testP2O3"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RL3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RL2"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="30dp">
+
+        <TextView
+            android:id="@+id/pregunta3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/testPregunta3"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pregunta3"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/opcion3A"
+                style="@style/AppTheme.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/testP3O1" />
+
+            <RadioButton
+                android:id="@+id/opcion3B"
+                style="@style/AppTheme.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/testP3O2" />
+
+            <RadioButton
+                android:id="@+id/opcion3C"
+                style="@style/AppTheme.RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="@string/testP3O3" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/botonCentro"
+        style="@style/AppTheme.Button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/botonProbar" />
+</RelativeLayout>

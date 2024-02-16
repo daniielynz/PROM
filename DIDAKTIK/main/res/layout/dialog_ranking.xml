@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <!-- Contenedor de Textos USUARIO-->
+    <LinearLayout
+        android:id="@+id/textosContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <!-- Texto -->
+    <TextView
+        android:id="@+id/textoDebajoDelItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/clasificacion"
+        android:textColor="@color/masOscuro"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_below="@id/textosContainer"
+        android:layout_marginTop="8dp"/>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRanking"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/textoDebajoDelItem"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1" />
+
+</RelativeLayout>

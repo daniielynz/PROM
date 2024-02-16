@@ -1,0 +1,88 @@
+<!--Inglés-->
+<resources>
+    <string name="tituloGenerarDialogo">CONGRATULATIONS</string>
+    <string name="felicitacion_parte1">Very Good! You obtained the letter </string>
+    <string name="felicitacion_parte2"> and you have also recieved this points: </string>
+    <string name="tituloErrores">THERE ARE MISTAKES</string>
+    <string name="errorActividad1">You havn\'t selected all the correct options</string>
+    <string name="tituloPista">CLUE</string>
+    <string name="errorActividad2">You have not selected the correct options</string>
+    <string name="errorActividad3">You have to select one option on each question</string>
+    <string-array name="arrayPistas" translatable="false">
+        <item>Roundabout intersection on the road</item>
+        <item>Beaches have water and ...</item>
+        <item>Boats load and unload here</item>
+        <item>You also live in a ...</item>
+        <item>Used to cross over a river</item>
+    </string-array>
+    <string-array name="arrayRespuestas" translatable="false">
+        <item>roundabout</item>
+        <item>sand</item>
+        <item>port</item>
+        <item>house</item>
+        <item>bridge</item>
+    </string-array>
+    <string name="encontrado">found</string>
+    <string name="tituloApellidos">Select the surnames that appears on the wall</string>
+    <string name="botonAcabar">FINISH</string>
+    <string name="botonCerrar">CLOSE</string>
+    <string name="botonProbar">TRY</string>
+    <string name="tituloPregunta1">How do you feel about changing partners in the Antzara tests? Why?</string>
+    <string name="tituloPregunta2">What do you think about using the pole in the Sokamuturra test? How would you change to prevent the presence of the animal?</string>
+    <string name="placeholder1">Write the conclusion here...</string>
+    <string name="placeholder2">Write the difference here</string>
+    <string name="testPregunta1">1. Why is the Biscay Bridge so tall?</string>
+    <string name="testPregunta2">2. What is its height?</string>
+    <string name="testPregunta3">3. Which two towns does it connect?</string>
+    <string name="testP1O1">To allow ships to pass underneath without issues</string>
+    <string name="testP1O2">To be more impressive</string>
+    <string name="testP1O3">Because they have iron in abundance</string>
+    <string name="testP2O1">100 meters</string>
+    <string name="testP2O2">10 meters</string>
+    <string name="testP2O3">50 meters</string>
+    <string name="testP3O1">Getxo and Portugalete</string>
+    <string name="testP3O2">Lutxana and Bilbao</string>
+    <string name="testP3O3">Leioa and Getxo</string>
+    <string name="tituloAcabarActividad">Finish activity:</string>
+    <string name="mision1">SELECT LAST NAMES</string>
+    <string name="mision2">PUZZLE</string>
+    <string name="mision3">UNDERLINE WORDS</string>
+    <string name="mision4">DEBATE</string>
+    <string name="mision5">FIND DIFFERENCES</string>
+    <string name="mision6">SHIP</string>
+    <string name="mision7">QUESTIONNAIRE</string>
+    <string name="puntos">points</string>
+    <string name="mensajePrincipal">Hello! My name is Eguski, and I will introduce you to the cultural heritage of Getxo.\nFor this, we will visit seven different places in Getxo.\nBut be careful! You have to perform some activities! Come and join me!</string>
+    <string name="creditos">AUTHORS (DEV):\nAdrián Llarena\nDaniel Yañez\nIker Pérez-Cárcamo\n\nAUTHORS:\nLara Casanueva\nMikel De la Torre\nIrune García\nMaider Hombreiro\n\nVERSION: 1.0\n© 2023-2024</string>
+    <string name="tituloCreditos">About Getxo Ikasi</string>
+    <string name="botonJugar">PLAY</string>
+    <string name="misionCancion">SONG</string>
+    <string name="descripcion1">We´re at Andra Mari´s Church!</string>
+    <string name="descripcion2">We´re in the field where the Getxo Paellas are celebrated</string>
+    <string name="descripcion3">We´re in the Old Port! The place where fishermen used to live</string>
+    <string name="descripcion4">In this place, the very famous festivals of the Old Port are celebrated</string>
+    <string name="descripcion5">We\'re in front of the galleries of Punta Begoña!</string>
+    <string name="descripcion6">We\'re at Jose Luis de Ugarte\'s sailing school! Who wants to know more?</string>
+    <string name="descripcion7">We are at the Biscay Bridge! Do you want to go in the other direction?</string>
+    <string name="descripcionCancion">VERY GOOD! Have you finished all the games, are you ready to sing?</string>
+    <string name="encontradas">0/5 found</string>
+    <string name="botonAceptar">ACCEPT</string>
+    <string name="placeholder3">Write your name</string>
+    <string name="clasificacion">-- RANKING --</string>
+    <string name="felicitacion_actividad">You have successfully completed the game, you have received the following rewards:</string>
+    <string name="letra">Letter</string>
+    <string name="idioma_es">Spanish</string>
+    <string name="idioma_eu">Basque</string>
+    <string name="idioma_en">English</string>
+    <string name="texto_idioma">-- Select Language --</string>
+    <string name="texto_progreso">-- Restart Progress --</string>
+    <string name="texto_acercade">-- About --</string>
+    <string name="borrar_informacion">DELETE INFORMATION</string>
+    <string name="texto_borrar_informacion">All data will be lost, do you want to continue?</string>
+    <string name="si">YES</string>
+    <string name="no">NO</string>
+    <string name="texto_terminaractividades">Finish all the activities to unlock</string>
+    <string name="palabras_encontrar">Find the next words:</string>
+    <string name="texto_arrastrar">Drag the pieces into place!</string>
+    <string name="texto_reproducir">Play the video!</string>
+</resources>

@@ -1,0 +1,88 @@
+<!--Euskera-->
+<resources>
+    <string name="tituloGenerarDialogo">ZORIONAK</string>
+    <string name="felicitacion_parte1">Oso Ondo! Letra hau lortu duzu </string>
+    <string name="felicitacion_parte2"> eta gainera puntu hauek lortu dituzu: </string>
+    <string name="tituloErrores">AKATSAK DAUDE</string>
+    <string name="errorActividad1">Ez dituzu erantzun zuzen guztiak aukeratu</string>
+    <string name="tituloPista">PISTA</string>
+    <string name="errorActividad2">Ez dituzu aukera zuzenak hautatu</string>
+    <string name="errorActividad3">Galdera guztietan erantzun bat hautatu behar da</string>
+    <string-array name="arrayPistas" translatable="false">
+        <item>Gune biribila da</item>
+        <item>Hondartzak daukate ura eta...</item>
+        <item>Itsasontziak ainguratuta dauden tokia</item>
+        <item>Baita zu ... batean bizi zara</item>
+        <item>Ibai bat zeharkatzeko erabiltzen da</item>
+    </string-array>
+    <string-array name="arrayRespuestas" translatable="false">
+        <item>biribilgunea</item>
+        <item>harea</item>
+        <item>portua</item>
+        <item>etxea</item>
+        <item>zubia</item>
+    </string-array>
+    <string name="encontrado">aurkituta</string>
+    <string name="tituloApellidos">Abizen hauetatik horman daudenak aukeratu</string>
+    <string name="botonAcabar">BUKATU</string>
+    <string name="botonCerrar">ITXI</string>
+    <string name="botonProbar">FROGATU</string>
+    <string name="tituloPregunta1">Zer iruditzen zaizue antzarren probetan antzarra aldatu izana? Zergatik?</string>
+    <string name="tituloPregunta2">Sokamuturra proban zer iruditzen zaizue bigatxa erabiltzea? Nola aldatuko zenukete animaliaren presentzia ekiditeko?</string>
+    <string name="placeholder1">Hemen idatzi eztabaidaren konklusioa...</string>
+    <string name="placeholder2">Ezberdintasuna idatzi hemen</string>
+    <string name="testPregunta1">1. Zergatik da hain altua Bizkaiko Zubia?</string>
+    <string name="testPregunta2">2. Zenbateko altuera du?</string>
+    <string name="testPregunta3">3. Zein bi herri lotzen ditu?</string>
+    <string name="testP1O1">Itsasontziak arazorik gabe azpitik pasatzeko</string>
+    <string name="testP1O2">Harrigarriagoa izateko</string>
+    <string name="testP1O3">Burdina soberan zutelako</string>
+    <string name="testP2O1">100 metro</string>
+    <string name="testP2O2">10 metro</string>
+    <string name="testP2O3">50 metro</string>
+    <string name="testP3O1">Getxo eta Portugalete</string>
+    <string name="testP3O2">Lutxana eta Bilbao</string>
+    <string name="testP3O3">Leioa eta Getxo</string>
+    <string name="tituloAcabarActividad">Aktibitatea bukatu:</string>
+    <string name="mision1">ABIZENAK HAUTATU</string>
+    <string name="mision2">PUZZLE</string>
+    <string name="mision3">AZPIMARRATU HITZAK</string>
+    <string name="mision4">EZTABAIDA</string>
+    <string name="mision5">EZBERDINTASUNAK BILATU</string>
+    <string name="mision6">ITSASONTZIA</string>
+    <string name="mision7">GALDETEGIA</string>
+    <string name="puntos">puntu</string>
+    <string name="mensajePrincipal">Kaixo! Nire izena Eguski da eta Getxoko kultura ondarea aurkeztuko dizuet.\nHorretarako Getxoko zazpi leku ezberdin bisitatuko ditugu!\nBaina adi egon! Jarduera batzuk egin beharko dituzue! Etorri nirekin!</string>
+    <string name="creditos">EGILEAK (DEV):\nAdrián Llarena\nDaniel Yañez\nIker Pérez-Cárcamo\n\nEGILEAK:\nLara Casanueva\nMikel De la Torre\nIrune García\nMaider Hombreiro\n\nBERTSIOA: 1.0\n\u00a9 2023-2024</string>
+    <string name="tituloCreditos">Getxo Ikasi-ri buruz</string>
+    <string name="botonJugar">JOLASTU</string>
+    <string name="misionCancion">ABESTIA</string>
+    <string name="descripcion1">Andra Mariko elizan gaude!</string>
+    <string name="descripcion2">Getxoko Paellak ospatzen diren zelaian gaude</string>
+    <string name="descripcion3">Hona hemen Portu Zaharra! Arrantzaleak bizi ziren lekua</string>
+    <string name="descripcion4">Leku honetan oso ospetsuak diren Portu Zaharreko jaiak ospatzen dira</string>
+    <string name="descripcion5">Punta Begoña galerien aurrean gaude!</string>
+    <string name="descripcion6">Jose Luis de Ugarte belaontzi eskolan gaude! Nor den jakin nahi duzue?</string>
+    <string name="descripcion7">Bizkaiko Zubian gaude! Beste aldera joan nahi duzue?</string>
+    <string name="descripcionCancion">OSO ONDO!! Jolas guztiak bukatu dituzu, abesteko prest zaude?</string>
+    <string name="encontradas">0/5 aurkituta</string>
+    <string name="botonAceptar">ONARTU</string>
+    <string name="placeholder3">Zure izena idatzi</string>
+    <string name="clasificacion">-- SAILKAPENA --</string>
+    <string name="felicitacion_actividad">Aktibitatea ondo egin duzu, hurrengo sariak jaso dituzu:</string>
+    <string name="letra">Letra</string>
+    <string name="idioma_es">Gaztelera</string>
+    <string name="idioma_eu">Euskara</string>
+    <string name="idioma_en">Ingelesa</string>
+    <string name="texto_idioma">-- Hizkuntza Hautatu --</string>
+    <string name="texto_progreso">-- Berrabiarazi Jokoa --</string>
+    <string name="texto_acercade">-- Buruz --</string>
+    <string name="borrar_informacion">INFORMAZIOA EZABATU</string>
+    <string name="texto_borrar_informacion">Datu guztiak galduko dira, jarraitu nahi duzu?</string>
+    <string name="si">BAI</string>
+    <string name="no">EZ</string>
+    <string name="texto_terminaractividades">Amaitu aktibitate guztiak desblokeatzeko</string>
+    <string name="palabras_encontrar">Hurrengo hitzak bilatu:</string>
+    <string name="texto_arrastrar">Arrastatu piezak tokira!</string>
+    <string name="texto_reproducir">Erreproduzitu bideoa!</string>
+</resources>

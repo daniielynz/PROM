@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/masClaro"
+    tools:context=".Actividad1">
+
+    <ImageView
+        android:id="@+id/imagenVolver"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/volver"
+        android:onClick="volver"/>
+
+    <Button
+        android:id="@+id/btnCompletado"
+        style="@style/AppTheme.Button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="accionCompletado"
+        android:text="@string/botonAcabar" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:height="80dp"
+        android:gravity="center"
+        android:layout_below="@id/imagenVolver"
+        android:background="@drawable/bocadillo_pregunta"
+        android:text="@string/tituloApellidos"/>
+
+    <LinearLayout
+        android:id="@+id/layoutContenedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/op1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:height="50dp"
+                android:gravity="center"
+                android:text="Uria"
+                android:onClick="opcionCorrecta"/>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:tag="op1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="1dp"
+                android:layout_toEndOf="@+id/op1"
+                android:src="@drawable/opcioncorrecta"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/op2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:height="50dp"
+                android:gravity="center"
+                android:text="Hombreiro"
+                android:onClick="opcionIncorrecta"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:tag="op2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="1dp"
+                android:layout_toEndOf="@+id/op2"
+                android:visibility="invisible"
+                android:src="@drawable/opcionincorrecta" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/op3"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:height="50dp"
+                android:gravity="center"
+                android:onClick="opcionIncorrecta"
+                android:text="De la Torre"
+                android:textAlignment="center"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:tag="op3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="1dp"
+                android:layout_toEndOf="@+id/op3"
+                android:visibility="invisible"
+                android:src="@drawable/opcionincorrecta" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/op4"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:height="50dp"
+                android:gravity="center"
+                android:text="Llarena"
+                android:onClick="opcionIncorrecta"/>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="1dp"
+                android:layout_toEndOf="@+id/op4"
+                android:src="@drawable/opcionincorrecta"
+                android:tag="op4"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/op5"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:height="50dp"
+                android:gravity="center"
+                android:text="Arkoetxea"
+                android:onClick="opcionCorrecta"/>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:tag="op5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="1dp"
+                android:layout_toEndOf="@+id/op5"
+                android:src="@drawable/opcioncorrecta"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/op6"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:height="50dp"
+                android:gravity="center"
+                android:text="Yañez"
+                android:onClick="opcionIncorrecta"/>
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:tag="op6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="1dp"
+                android:layout_toEndOf="@+id/op6"
+                android:visibility="invisible"
+                android:src="@drawable/opcionincorrecta" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/op7"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:height="50dp"
+                android:gravity="center"
+                android:text="Salsidua"
+                android:onClick="opcionCorrecta"/>
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:tag="op7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="1dp"
+                android:layout_toEndOf="@+id/op7"
+                android:visibility="invisible"
+                android:src="@drawable/opcioncorrecta" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/op8"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:height="50dp"
+                android:gravity="center"
+                android:text="Pérez"
+                android:onClick="opcionIncorrecta"/>
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:tag="op1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="1dp"
+                android:layout_toEndOf="@+id/op8"
+                android:visibility="invisible"
+                android:src="@drawable/opcionincorrecta" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
