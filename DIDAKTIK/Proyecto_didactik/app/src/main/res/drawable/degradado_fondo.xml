@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Gradiente lineal con inicio de color en @color/oscuro, fin en @color/masClaro y ángulo de 90 grados -->
+    <gradient
+        android:startColor="@color/oscuro"
+        android:endColor="@color/masClaro"
+        android:angle="90"/>
+</shape>

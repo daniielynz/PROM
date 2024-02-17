@@ -1,0 +1,26 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Configuramos los diferentes bordes del diseño -->
+    <corners
+        android:topRightRadius="10dp"
+        android:radius="40dp" />
+
+    <!-- Configuramos el angulo del gradiente, su radio, sus colores, su tipo y su punto central en los eje X e Y -->
+    <gradient
+        android:angle="45"
+        android:centerX="0.5"
+        android:centerY="0.5"
+        android:endColor="@color/claro"
+        android:gradientRadius="50"
+        android:startColor="@color/claro"
+        android:type="linear" />
+    <!-- Definición del tamaño del elemento -->
+    <size
+        android:width="82dp"
+        android:height="82dp" />
+    <!-- Definición del borde del elemento -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/masOscuro" />
+</shape>

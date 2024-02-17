@@ -1,0 +1,71 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/masClaro"
+    tools:context=".MainActivity">
+
+    <!-- Título de la actividad -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/titulo"
+        android:fontFamily="serif"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <!-- Imagen que actúa como botón -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="6dp"
+        android:onClick="showTextBox"
+        android:src="@drawable/vasorojo" />
+
+    <!-- Texto debajo de la imagen -->
+    <TextView
+        android:id="@+id/belowImageViewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:text="" />
+
+    <!-- Elemento gráfico estilo bocadillo que contiene un texto -->
+    <TextView
+        android:id="@+id/bocadillo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="-142dp"
+        android:background="@drawable/bocadillo_main"
+        android:gravity="center"
+        android:text="CLICK"
+        android:textSize="18sp" />
+
+    <!-- Botón de jugar, inicialmente invisible -->
+    <Button
+        android:id="@+id/botonJugar"
+        style="@style/AppTheme.Button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/botonJugar"
+        android:visibility="invisible"
+        android:onClick="botonJugar"/>
+</RelativeLayout>

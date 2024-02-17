@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/masClaro"
+    tools:context=".Actividad6">
+
+    <!-- Imagen en la esquina superior izquierda -->
+    <ImageView
+        android:id="@+id/imagenVolver"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/volver"
+        android:onClick="volver"/>
+
+    <!-- Imagen en el medio de la pantalla -->
+    <ImageView
+        android:id="@+id/imagenCentro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/papel"
+        android:layout_centerInParent="true" />
+
+    <!-- Botón al final de la pantalla -->
+    <Button
+        android:id="@+id/btnCompletado"
+        style="@style/AppTheme.Button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/botonAcabar"
+        android:onClick="accionCompletado"/>
+</RelativeLayout>

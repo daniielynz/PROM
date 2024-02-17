@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Color sólido aplicado al elemento tomado de @color/claro -->
+    <solid android:color="@color/claro" />
+
+    <!-- Esquinas redondeadas con un radio de 8dp -->
+    <corners android:radius="8dp" />
+</shape>

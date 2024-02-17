@@ -1,0 +1,58 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <!-- Contenedor principal: RelativeLayout -->
+    <LinearLayout
+        android:id="@+id/modalContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bordes_redondos_modal"
+        android:maxWidth="380dp"
+        android:minWidth="380dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Contenedor interno: LinearLayout -->
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/placeholder3"
+            android:textColor="@color/masOscuro"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <!-- Campo de texto para el nombre -->
+        <EditText
+            android:id="@+id/editTextContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/masOscuro"
+            android:background="@color/white"
+            android:textStyle="bold"
+            android:maxLength="10"/>
+
+        <!-- Botón de aceptar -->
+        <Button
+            android:id="@+id/acceptButton"
+            style="@style/AppTheme.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:onClick="validarNombre"
+            android:text="@string/botonAceptar" />
+
+    </LinearLayout>
+
+</RelativeLayout>

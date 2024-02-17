@@ -1,0 +1,165 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".Ajustes">
+
+    <!-- Contenedor principal de la ventana modal -->
+    <LinearLayout
+        android:id="@+id/modalContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bordes_redondos_modal"
+        android:maxWidth="380dp"
+        android:minWidth="380dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Sección para seleccionar idioma -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/texto_idioma"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/masOscuro"/>
+
+        <!-- Botones para seleccionar idioma -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Botón 1 - Español -->
+            <LinearLayout
+                android:id="@+id/layoutEs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnSpanish"
+                    style="@style/AppTheme.Button"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/es"
+                    android:onClick="idiomaES" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/idioma_es"
+                    android:textColor="@color/masOscuro" />
+            </LinearLayout>
+
+            <!-- Botón 2 - Euskara -->
+            <LinearLayout
+                android:id="@+id/layoutEu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnBasque"
+                    style="@style/AppTheme.Button"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/eu"
+                    android:onClick="idiomaEU" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/idioma_eu"
+                    android:textColor="@color/masOscuro" />
+            </LinearLayout>
+
+            <!-- Botón 3 - Inglés -->
+            <LinearLayout
+                android:id="@+id/layoutEn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnEnglish"
+                    style="@style/AppTheme.Button"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="@drawable/en"
+                    android:onClick="idiomaEN" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/idioma_en"
+                    android:textColor="@color/masOscuro" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Sección para reiniciar progreso -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="@string/texto_progreso"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/masOscuro"/>
+
+        <!-- Botón para reiniciar progreso -->
+        <Button
+            android:id="@+id/btnReiniciar"
+            style="@style/AppTheme.Button"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:background="@drawable/reiniciarjuego"
+            android:onClick="reiniciarApp" />
+
+        <!-- Sección para información "Acerca de" -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="@string/texto_acercade"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/masOscuro"/>
+
+        <!-- Botón para mostrar información "Acerca de" -->
+        <Button
+            android:id="@+id/bntAcercaDe"
+            style="@style/AppTheme.Button"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/iconoacercade"
+            android:onClick="showInfoDialog" />
+
+        <!-- Botón para cerrar la ventana modal -->
+        <Button
+            android:id="@+id/acceptButtonAjustes"
+            style="@style/AppTheme.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:text="@string/botonCerrar" />
+    </LinearLayout>
+</RelativeLayout>

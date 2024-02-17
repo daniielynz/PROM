@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/masClaro"
+    tools:context=".Actividad1">
+
+    <!-- ImageView que muestra una imagen de "volver", con identificador imagenVolver y dimensiones de 72x72dp, alineada en la parte superior izquierda con márgenes de 16dp y acción onClick "volver" -->
+    <ImageView
+        android:id="@+id/imagenVolver"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/volver"
+        android:onClick="volver"/>
+
+    <!-- Button con identificador btnCompletado, estilo AppTheme.Button, dimensiones de 300x50dp, centrado en la parte inferior con márgenes y acción onClick "accionCompletado", muestra el texto definido en strings.xml con clave "botonAcabar" -->
+    <Button
+        android:id="@+id/btnCompletado"
+        style="@style/AppTheme.Button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="accionCompletado"
+        android:text="@string/botonAcabar" />
+
+    <!-- TextView con identificador titulo, ancho que ocupa el parent, altura envuelta al contenido, estilo de texto negrita, centrado y alineado al centro, tamaño de texto 30dp, altura fija de 80dp, fondo con un drawable bocadillo_pregunta, muestra el texto definido en strings.xml con clave "tituloApellidos" -->
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:height="80dp"
+        android:gravity="center"
+        android:layout_below="@id/imagenVolver"
+        android:background="@drawable/bocadillo_pregunta"
+        android:text="@string/tituloApellidos"/>
+
+
+    <LinearLayout
+        android:id="@+id/layoutContenedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo"
+        android:orientation="vertical">
+
+        <!-- RelativeLayout que contiene una opción con identificador op1 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <!-- TextView con identificador op1, ancho fijo de 300dp, altura envuelta al contenido, alineación y gravedad centradas, tamaño de texto 30dp, altura fija de 50dp, texto "Uria", acción onClick "opcionCorrecta" -->
+            <TextView
+                android:id="@+id/op1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:height="50dp"
+                android:gravity="center"
+                android:text="Uria"
+                android:onClick="opcionCorrecta"/>
+
+            <!-- ImageView con identificador imageView1, etiqueta "op1", ancho y altura de 50dp, margen a la derecha de 1dp, posición a la derecha del TextView op1, imagen invisible por defecto -->
+            <ImageView
+                android:id="@+id/imageView1"
+                android:tag="op1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="1dp"
+                android:layout_toEndOf="@+id/op1"
+                android:src="@drawable/opcioncorrecta"
+                android:visibility="invisible" />
+        </RelativeLayout>
+        <!-- RelativeLayout que contiene una opción con identificador op2 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <!-- TextView con identificador op2, ancho fijo de 300dp, altura envuelta al contenido, alineación y gravedad centradas, tamaño de texto 30dp, altura fija de 50dp, texto "Hombreiro", acción onClick "opcionIncorrecta" -->
+            <TextView
+                android:id="@+id/op2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:height="50dp"
+                android:gravity="center"
+                android:text="Hombreiro"
+                android:onClick="opcionIncorrecta"/>
+
+            <!-- ImageView con identificador imageView2, etiqueta "op2", ancho y altura de 50dp, margen a la derecha de 1dp, posición a la derecha del TextView op2, imagen invisible por defecto -->
+            <ImageView
+                android:id="@+id/imageView2"
+                android:tag="op2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="1dp"
+                android:layout_toEndOf="@+id/op2"
+                android:visibility="invisible"
+                android:src="@drawable/opcionincorrecta" />
+        </RelativeLayout>
+
+        <!-- RelativeLayout que contiene una opción con identificador op3 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <!-- TextView con identificador op3, ancho fijo de 300dp, altura envuelta al contenido, alineación y gravedad centradas, tamaño de texto 30dp, altura fija de 50dp, texto "De la Torre", acción onClick "opcionIncorrecta" -->
+            <TextView
+                android:id="@+id/op3"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:height="50dp"
+                android:gravity="center"
+                android:onClick="opcionIncorrecta"
+                android:text="De la Torre"
+                android:textAlignment="center"
+                android:textSize="30dp" />
+
+            <!-- ImageView con identificador imageView3, etiqueta "op3", ancho y altura de 50dp, margen a la derecha de 1dp, posición a la derecha del TextView op3, imagen invisible por defecto -->
+            <ImageView
+                android:id="@+id/imageView3"
+                android:tag="op3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="1dp"
+                android:layout_toEndOf="@+id/op3"
+                android:visibility="invisible"
+                android:src="@drawable/opcionincorrecta" />
+        </RelativeLayout>
+
+        <!-- RelativeLayout que contiene una opción con identificador op4 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <!-- TextView con identificador op4, ancho fijo de 300dp, altura envuelta al contenido, alineación y gravedad centradas, tamaño de texto 30dp, altura fija de 50dp, texto "Llarena", acción onClick "opcionIncorrecta" -->
+            <TextView
+                android:id="@+id/op4"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:height="50dp"
+                android:gravity="center"
+                android:text="Llarena"
+                android:onClick="opcionIncorrecta"/>
+
+            <!-- ImageView con identificador imageView4, etiqueta "op4", ancho y altura de 50dp, margen a la derecha de 1dp, posición a la derecha del TextView op4, imagen invisible por defecto -->
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="1dp"
+                android:layout_toEndOf="@+id/op4"
+                android:src="@drawable/opcionincorrecta"
+                android:tag="op4"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+
+        <!-- RelativeLayout que contiene una opción con identificador op5 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <!-- TextView con identificador op5, ancho fijo de 300dp, altura envuelta al contenido, alineación y gravedad centradas, tamaño de texto 30dp, altura fija de 50dp, texto "Arkoetxea", acción onClick "opcionCorrecta" -->
+            <TextView
+                android:id="@+id/op5"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:height="50dp"
+                android:gravity="center"
+                android:text="Arkoetxea"
+                android:onClick="opcionCorrecta"/>
+
+            <!-- ImageView con identificador imageView5, etiqueta "op5", ancho y altura de 50dp, margen a la derecha de 1dp, posición a la derecha del TextView op5, imagen invisible por defecto -->
+            <ImageView
+                android:id="@+id/imageView5"
+                android:tag="op5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="1dp"
+                android:layout_toEndOf="@+id/op5"
+                android:src="@drawable/opcioncorrecta"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <!-- RelativeLayout que contiene una opción con identificador op6 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <!-- TextView con identificador op6, ancho fijo de 300dp, altura envuelta al contenido, alineación y gravedad centradas, tamaño de texto 30dp, altura fija de 50dp, texto "Yañez", acción onClick "opcionIncorrecta" -->
+            <TextView
+                android:id="@+id/op6"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:height="50dp"
+                android:gravity="center"
+                android:text="Yañez"
+                android:onClick="opcionIncorrecta"/>
+
+            <!-- ImageView con identificador imageView6, etiqueta "op6", ancho y altura de 50dp, margen a la derecha de 1dp, posición a la derecha del TextView op6, imagen invisible por defecto -->
+            <ImageView
+                android:id="@+id/imageView6"
+                android:tag="op6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="1dp"
+                android:layout_toEndOf="@+id/op6"
+                android:visibility="invisible"
+                android:src="@drawable/opcionincorrecta" />
+        </RelativeLayout>
+
+        <!-- RelativeLayout que contiene una opción con identificador op7 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <!-- TextView con identificador op7, ancho fijo de 300dp, altura envuelta al contenido, alineación y gravedad centradas, tamaño de texto 30dp, altura fija de 50dp, texto "Salsidua", acción onClick "opcionCorrecta" -->
+            <TextView
+                android:id="@+id/op7"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:height="50dp"
+                android:gravity="center"
+                android:text="Salsidua"
+                android:onClick="opcionCorrecta"/>
+
+            <!-- ImageView con identificador imageView7, etiqueta "op7", ancho y altura de 50dp, margen a la derecha de 1dp, posición a la derecha del TextView op7, imagen invisible por defecto -->
+            <ImageView
+                android:id="@+id/imageView7"
+                android:tag="op7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="1dp"
+                android:layout_toEndOf="@+id/op7"
+                android:visibility="invisible"
+                android:src="@drawable/opcioncorrecta" />
+        </RelativeLayout>
+
+
+        <!-- RelativeLayout que contiene una opción con identificador op8 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <!-- TextView con identificador op8, ancho fijo de 300dp, altura envuelta al contenido, alineación y gravedad centradas, tamaño de texto 30dp, altura fija de 50dp, texto "Pérez", acción onClick "opcionIncorrecta" -->
+            <TextView
+                android:id="@+id/op8"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:height="50dp"
+                android:gravity="center"
+                android:text="Pérez"
+                android:onClick="opcionIncorrecta"/>
+
+            <!-- ImageView con identificador imageView8, etiqueta "op1" (debería ser "op8"), ancho y altura de 50dp, margen a la derecha de 1dp, posición a la derecha del TextView op8, imagen invisible por defecto -->
+            <ImageView
+                android:id="@+id/imageView8"
+                android:tag="op8"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="1dp"
+                android:layout_toEndOf="@+id/op8"
+                android:visibility="invisible"
+                android:src="@drawable/opcionincorrecta" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

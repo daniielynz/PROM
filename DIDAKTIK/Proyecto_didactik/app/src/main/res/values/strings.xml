@@ -1,0 +1,109 @@
+<!--Inglés-->
+<resources>
+    <string name="app_name" translatable="false">Getxo Ikasi</string>
+    <string name="titulo" translatable="false">GETXO IKASI</string>
+    <string-array name="arrayPuntosActividades" translatable="false">
+        <item>50</item>
+        <item>60</item>
+        <item>80</item>
+        <item>10</item>
+        <item>100</item>
+        <item>10</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="arrayLetrasActividades" translatable="false">
+        <item>A</item>
+        <item>B</item>
+        <item>E</item>
+        <item>S</item>
+        <item>T</item>
+        <item>I</item>
+        <item>A</item>
+    </string-array>
+
+    <string-array name="arrayPistas" translatable="false">
+        <item>Intersección redonda en carretera</item>
+        <item>Las playas tienen agua y ...</item>
+        <item>Los barcos cargan y descargan aquí</item>
+        <item>Tu también vives en una ...</item>
+        <item>Sirve para pasar por encima de un río</item>
+    </string-array>
+    <string-array name="arrayRespuestas" translatable="false">
+        <item>rotonda</item>
+        <item>arena</item>
+        <item>puerto</item>
+        <item>casa</item>
+        <item>puente</item>
+    </string-array>
+    <string name="tituloGenerarDialogo">ENHORABUENA</string>
+    <string name="felicitacion_parte1">Muy bien! Has conseguido la letra </string>
+    <string name="felicitacion_parte2"> y también te has llevado estos puntos: </string>
+    <string name="tituloErrores">HAY ERRORES</string>
+    <string name="errorActividad1">No has seleccionado todas las opciones correctas</string>
+    <string name="tituloPista">PISTA</string>
+    <string name="errorActividad2">No has seleccionado las opciones correctas</string>
+    <string name="errorActividad3">Hay que seleccionar una opción en cada pregunta</string>
+    <string name="encontrado">encontradas</string>
+    <string name="tituloApellidos">Selecciona los apellidos que aparecen en la pared</string>
+    <string name="botonAcabar">FINALIZAR</string>
+    <string name="botonCerrar">CERRAR</string>
+    <string name="botonProbar">PROBAR</string>
+    <string name="tituloPregunta1">¿Qué os parece haber cambiado de pareja en las pruebas de Antzara? ¿Por qué?</string>
+    <string name="tituloPregunta2">¿Qué os parece utilizar la biga en la prueba de Sokamuturra? ¿Cómo cambiaríais para evitar la presencia del animal?</string>
+    <string name="placeholder1">Escribir la conclusión aqui...</string>
+    <string name="placeholder2">Escribir diferencia aquí</string>
+    <string name="testPregunta1">1. ¿Por qué es tan alto el Puente Bizkaia?</string>
+    <string name="testPregunta2">2. ¿Cuál es su altura?</string>
+    <string name="testPregunta3">3. ¿Qué dos pueblos conecta?</string>
+    <string name="testP1O1">Para permitir el paso sin problemas de los barcos</string>
+    <string name="testP1O2">Para ser más impresionante</string>
+    <string name="testP1O3">Por tener el hierro en abundancia</string>
+    <string name="testP2O1">100 metros</string>
+    <string name="testP2O2">10 metros</string>
+    <string name="testP2O3">50 metros</string>
+    <string name="testP3O1">Getxo y Portugalete</string>
+    <string name="testP3O2">Lutxana y Bilbao</string>
+    <string name="testP3O3">Leioa y Getxo</string>
+    <string name="tituloAcabarActividad">Terminar actividad:</string>
+    <string name="mision1">SELECCIONAR APELLIDOS</string>
+    <string name="mision2">PUZZLE</string>
+    <string name="mision3">SUBRAYAR PALABRAS</string>
+    <string name="mision4">DEBATE</string>
+    <string name="mision5">BUSCAR DIFERENCIAS</string>
+    <string name="mision6">BARCO</string>
+    <string name="mision7">CUESTIONARIO</string>
+    <string name="puntos">puntos</string>
+    <string name="mensajePrincipal">¡Hola! Mi nombre es Eguski y te presentaré el patrimonio cultural de Getxo.\nPara ello, visitaremos siete lugares diferentes de Getxo.\n¡Pero cuidado! ¡Debes realizar algunas actividades! ¡Ven y únete a mí!</string>
+    <string name="creditos">AUTORES (DEV):\nAdrián Llarena\nDaniel Yañez\nIker Pérez-Cárcamo\n\nAUTORES:\nLara Casanueva\nMikel De la Torre\nIrune García\nMaider Hombreiro\n\nVERSIÓN: 1.0\n© 2023-2024</string>
+    <string name="tituloCreditos">Acerca de Getxo Ikasi</string>
+    <string name="botonJugar">JUGAR</string>
+    <string name="misionCancion">CANCION</string>
+    <string name="descripcion1">¡Estamos en la iglesia de Andra Mari!</string>
+    <string name="descripcion2">Estamos en el campo donde se celebran las Paellas de Getxo</string>
+    <string name="descripcion3">¡Estamos en el puente viejo! Aquí solían vivir los pescadores</string>
+    <string name="descripcion4">En este lugar se celebran las muy famosas fiestas del Puerto Viejo</string>
+    <string name="descripcion5">¡Estamos frente a las galerías de Punta Begoña!</string>
+    <string name="descripcion6">¡Estamos en la escuela de vela de Jose Luis de Ugarte! ¿Quién quiere saber más?</string>
+    <string name="descripcion7">¡Estamos en el Puente de Vizcaya! ¿Quieres ir en la otra dirección?</string>
+    <string name="descripcionCancion">¡MUY BIEN! ¿Has completado todos los juegos, estás listo para cantar?</string>
+    <string name="encontradas">0/5 encontradas</string>
+    <string name="botonAceptar">ACEPTAR</string>
+    <string name="placeholder3">Escribe tu nombre</string>
+    <string name="clasificacion">-- CLASIFICACIÓN --</string>
+    <string name="felicitacion_actividad">Has superado el juego con éxito, has recibido las siguientes recompensas:</string>
+    <string name="letra">Letra</string>
+    <string name="idioma_es">Español</string>
+    <string name="idioma_eu">Euskera</string>
+    <string name="idioma_en">Inglés</string>
+    <string name="texto_idioma">-- Seleccionar Idioma --</string>
+    <string name="texto_progreso">-- Reiniciar Progreso --</string>
+    <string name="texto_acercade">-- Acerca De --</string>
+    <string name="borrar_informacion">BORRAR INFORMACIÓN</string>
+    <string name="texto_borrar_informacion">Se perderán todos los datos, ¿quieres continuar?</string>
+    <string name="si">SI</string>
+    <string name="no">NO</string>
+    <string name="texto_terminaractividades">Termina todas las actividades para desbloquear</string>
+    <string name="palabras_encontrar">Busca las siguientes palabras:</string>
+    <string name="texto_arrastrar">¡Arrastra las piezas a su lugar!</string>
+    <string name="texto_reproducir">¡Reproduce el vídeo!</string>
+</resources>

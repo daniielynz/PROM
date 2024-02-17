@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/masClaro"
+    tools:context=".Actividad2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Imagen en la esquina superior izquierda -->
+        <ImageView
+            android:id="@+id/imagenVolver"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/volver"
+            android:onClick="volver"/>
+
+        <!-- LinearLayout con identificador marcoZone, altura ajustada al contenido con peso 1, contenido centrado verticalmente, orientación vertical -->
+        <LinearLayout
+            android:id="@+id/marcoZone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- RelativeLayout con altura fija de 220dp, fondo definido por el drawable y centrado horizontal -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="220dp"
+                android:background="@drawable/y"
+                android:gravity="center_horizontal">
+
+                <!-- ImageView con identificador marco1, ancho y alto de 143dp, fondo definido por el drawable marco1, inicialmente visible -->
+                <ImageView
+                    android:id="@+id/marco1"
+                    android:layout_width="143dp"
+                    android:layout_height="143dp"
+                    android:background="@drawable/marco1"
+                    android:visibility="visible" />
+
+                <!-- ImageView con identificador marco2, ancho y alto de 143dp, margen izquierdo de -32dp, posición a la derecha de marco1, fondo definido por el drawable marco2 -->
+                <ImageView
+                    android:id="@+id/marco2"
+                    android:layout_width="143dp"
+                    android:layout_height="143dp"
+                    android:layout_marginLeft="-32dp"
+                    android:layout_toRightOf="@id/marco1"
+                    android:background="@drawable/marco2" />
+
+                <!-- ImageView con identificador marco3, ancho y alto de 140dp, margen izquierdo de -34dp, posición a la derecha de marco2, fondo definido por el drawable marco3 -->
+                <ImageView
+                    android:id="@+id/marco3"
+                    android:layout_width="140dp"
+                    android:layout_height="141dp"
+                    android:layout_marginLeft="-34dp"
+                    android:layout_toRightOf="@id/marco2"
+                    android:background="@drawable/marco3" />
+
+                <!-- ImageView con identificador marco4, ancho y alto de 143dp, debajo de marco1, margen superior de -58dp, fondo definido por el drawable marco4 -->
+                <ImageView
+                    android:id="@+id/marco4"
+                    android:layout_width="143dp"
+                    android:layout_height="151dp"
+                    android:layout_below="@id/marco1"
+                    android:layout_marginTop="-58dp"
+                    android:background="@drawable/marco4" />
+
+                <!-- ImageView con identificador marco5, ancho y alto de 141dp, debajo de marco2, margen izquierdo de -58dp, margen superior de -57dp, posición a la derecha de marco4, fondo definido por el drawable marco5 -->
+                <ImageView
+                    android:id="@+id/marco5"
+                    android:layout_width="141dp"
+                    android:layout_height="134dp"
+                    android:layout_below="@id/marco2"
+                    android:layout_marginLeft="-58dp"
+                    android:layout_marginTop="-57dp"
+                    android:layout_toRightOf="@id/marco4"
+                    android:background="@drawable/marco5" />
+
+                <!-- ImageView con identificador marco6, ancho y alto de 140dp, debajo de marco3, margen izquierdo de -31dp, margen superior de -32dp, posición a la derecha de marco5, fondo definido por el drawable marco6 -->
+                <ImageView
+                    android:id="@+id/marco6"
+                    android:layout_width="140dp"
+                    android:layout_height="110dp"
+                    android:layout_below="@id/marco3"
+                    android:layout_marginLeft="-31dp"
+                    android:layout_marginTop="-32dp"
+                    android:layout_toRightOf="@id/marco5"
+                    android:background="@drawable/marco6" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvRespuesta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_arrastrar"
+            android:layout_gravity="center"
+            android:textSize="23sp"
+            android:textColor="@color/masOscuro" />
+
+        <LinearLayout
+            android:id="@+id/puzzleZone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- LinearLayout con orientación horizontal, ajustado al contenido, centrado horizontalmente, con margen inferior de 10dp -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- ImageView con identificador puzzle3x2p4, ancho de 125dp, alto de 89dp, fuente de imagen definida por el drawable piece4 -->
+                <ImageView
+                    android:id="@+id/puzzle3x2p4"
+                    android:layout_width="125dp"
+                    android:layout_height="89dp"
+                    android:src="@drawable/piece4" />
+
+                <!-- ImageView con identificador puzzle3x2p1, ancho de 100dp, alto de 117dp, fuente de imagen definida por el drawable piece1 -->
+                <ImageView
+                    android:id="@+id/puzzle3x2p1"
+                    android:layout_width="100dp"
+                    android:layout_height="117dp"
+                    android:src="@drawable/piece1" />
+
+                <!-- ImageView con identificador puzzle3x2p3, ancho de 100dp, alto de 116dp, fuente de imagen definida por el drawable piece3 -->
+                <ImageView
+                    android:id="@+id/puzzle3x2p3"
+                    android:layout_width="100dp"
+                    android:layout_height="116dp"
+                    android:src="@drawable/piece3" />
+            </LinearLayout>
+
+
+            <!-- LinearLayout con orientación horizontal, ajustado al contenido, centrado horizontalmente -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- ImageView con identificador puzzle3x2p2, ancho de 145dp, alto de 93dp, fuente de imagen definida por el drawable piece2 -->
+                <ImageView
+                    android:id="@+id/puzzle3x2p2"
+                    android:layout_width="145dp"
+                    android:layout_height="93dp"
+                    android:src="@drawable/piece2" />
+
+                <!-- ImageView con identificador puzzle3x2p6, ancho de 123dp, alto de 96dp, fuente de imagen definida por el drawable piece6 -->
+                <ImageView
+                    android:id="@+id/puzzle3x2p6"
+                    android:layout_width="123dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/piece6" />
+
+                <!-- ImageView con identificador puzzle3x2p5, ancho de 96dp, alto de 112dp, fuente de imagen definida por el drawable piece5 -->
+                <ImageView
+                    android:id="@+id/puzzle3x2p5"
+                    android:layout_width="96dp"
+                    android:layout_height="112dp"
+                    android:src="@drawable/piece5" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

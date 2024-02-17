@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="oro">#EFB810</color>
+    <color name="plata">#E3E4E5</color>
+    <color name="bronce">#BF8970</color>
+    <color name="fallo">#BED0F9</color>
+    <color name="acierto">#D0F9BE</color>
+
+    <!--    Paleta 3-->
+    <color name="masClaro">#F9BED0</color>
+    <color name="claro">#E8698F</color>
+    <color name="oscuro">#D54671</color>
+    <color name="masOscuro">#700022</color>
+    <color name="colorTextos">#57205A</color>
+</resources>

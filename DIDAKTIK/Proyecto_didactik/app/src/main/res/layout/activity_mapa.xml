@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Mapa">
+
+    <!-- Mapa de Google -->
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        tools:context=".Mapa"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <!-- Cabecera con información del usuario -->
+    <LinearLayout
+        android:id="@+id/Cabecera"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/masOscuro"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <!-- Elementos en la cabecera -->
+        <LinearLayout
+            android:id="@+id/linearHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/masClaro"
+            android:orientation="horizontal">
+
+            <!-- Avatar del usuario -->
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="9dp"
+                android:src="@drawable/avatarrojo" />
+
+            <!-- Información del usuario (Nombre y Puntos) -->
+            <LinearLayout
+                android:id="@+id/linearVertical"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/masClaro"
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
+
+                <!-- Nombre del usuario -->
+                <TextView
+                    android:id="@+id/TvNombre"
+                    android:layout_width="199dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="34sp"
+                    android:textStyle="bold" />
+
+                <!-- Puntos del usuario -->
+                <TextView
+                    android:id="@+id/TvPuntos"
+                    android:layout_width="199dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingTop="5dp"
+                    android:text=""
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Botón de ajustes -->
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="mostrarAjustes"
+                android:padding="10dp"
+                android:src="@drawable/ajustes" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Botones de navegación y otras funciones -->
+    <ImageView
+        android:id="@+id/imagenVolver"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="89dp"
+        android:onClick="volver"
+        android:padding="5dp"
+        android:src="@drawable/volver" />
+
+    <ImageView
+        android:id="@+id/imagenCasa"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="149dp"
+        android:onClick="home"
+        android:padding="5dp"
+        android:src="@drawable/home" />
+
+    <ImageView
+        android:id="@+id/botonRanking"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="284dp"
+        android:layout_marginTop="85dp"
+        android:onClick="mostrarRanking"
+        android:src="@drawable/clasificacion" />
+
+    <!-- Layout adicional para elementos de juego -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Lista de letras -->
+        <TextView
+            android:id="@+id/TvListaLetras"
+            style="@style/AppTheme.TextView"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:inputType="textMultiLine"
+            android:letterSpacing="0.2"
+            android:onClick="ejecutarPalabraCompleta"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:textSize="40sp"
+            android:visibility="visible" />
+
+        <!-- Candado (posiblemente para alguna característica bloqueada) -->
+        <ImageView
+            android:id="@+id/candado"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="95dp"
+            android:background="@drawable/candado"
+            android:gravity="center_horizontal"
+            android:scaleType="center"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

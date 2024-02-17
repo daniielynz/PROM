@@ -1,0 +1,22 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Borde con colores invertidos (en forma de degradado) -->
+    <item>
+        <shape>
+            <gradient
+                android:startColor="@color/masOscuro"
+                :endColor="@color/claro"
+                android:angle="0"/>
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+    <!-- Fondo con degradado -->
+    <item android:right="2dp" android:left="2dp" android:top="2dp" android:bottom="2dp">
+        <shape>
+            <gradient
+                android:startColor="@color/oscuro"
+                android:endColor="@color/masClaro"
+                android:angle="0"/>
+            <corners android:radius="5dp"/>
+        </shape>
+    </item>
+</layer-list>

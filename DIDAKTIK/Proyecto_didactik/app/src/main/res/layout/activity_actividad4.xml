@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/masClaro"
+    tools:context=".Actividad4">
+
+    <!-- Imagen en la esquina superior izquierda -->
+    <ImageView
+        android:id="@+id/imagenVolver"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/volver"
+        android:onClick="volver"/>
+
+    <!-- Layout vertical debajo de la imagen -->
+
+    <LinearLayout
+        android:id="@+id/layoutContenedor"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:layout_below="@+id/imagenVolver"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <!-- Primera pregunta -->
+        <TextView
+            android:id="@+id/preg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tituloPregunta1"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:height="100dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/bocadillo_pregunta"/>
+
+        <!-- Primera respuesta -->
+        <EditText
+            android:id="@+id/cuadro1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:height="80dp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:hint="@string/placeholder1"
+            android:textColorHint="@color/masOscuro"/>
+
+        <!-- Segunda pregunta -->
+        <TextView
+            android:id="@+id/preg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tituloPregunta2"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:height="120dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@drawable/bocadillo_pregunta"/>
+
+        <!-- Segunda respuesta -->
+        <EditText
+            android:id="@+id/buscador"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:height="80dp"
+            android:gravity="center"
+            android:background="@color/white"
+            android:hint="@string/placeholder1"
+            android:textColorHint="@color/masOscuro"/>
+    </LinearLayout>
+
+    <!-- Botón inferior -->
+    <Button
+        android:id="@+id/btnCompletado"
+        style="@style/AppTheme.Button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="accionCompletado"
+        android:text="@string/botonAcabar" />
+</RelativeLayout>

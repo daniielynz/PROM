@@ -1,0 +1,14 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Definición de esquinas redondeadas con un radio de 10dp -->
+    <corners android:radius="10dp" />
+
+    <!-- Color sólido aplicado al elemento tomado de @color/masOscuro -->
+    <solid android:color="@color/masOscuro" />
+
+    <!-- Borde del elemento con ancho de 2dp y color tomado de @color/oscuro -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/oscuro" />
+
+</shape>
+
